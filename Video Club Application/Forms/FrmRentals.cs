@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.Odbc;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Video_Club_Application
@@ -32,14 +26,14 @@ namespace Video_Club_Application
         // METHODS
         public void LoadRentals()
         {
-            string query = "SELECT rental.`rental_id`,rental.`return_date`,inventory.`film_id`,film.`title`" +
-                "FROM customer JOIN rental ON customer.`customer_id`=rental.`customer_id`" +
-                "JOIN inventory ON rental.`inventory_id`=inventory.`inventory_id`" +
-                "JOIN film ON inventory.`film_id`=film.`film_id`" +
-                "WHERE customer.first_name='" + customerFirstName + "' AND customer.last_name='" + customerLastName + "'";
-
             try
             {
+                string query = "SELECT rental.`rental_id`,rental.`return_date`,inventory.`film_id`,film.`title`" +
+                    "FROM customer JOIN rental ON customer.`customer_id`=rental.`customer_id`" +
+                    "JOIN inventory ON rental.`inventory_id`=inventory.`inventory_id`" +
+                    "JOIN film ON inventory.`film_id`=film.`film_id`" +
+                    "WHERE customer.first_name='" + customerFirstName + "' AND customer.last_name='" + customerLastName + "'";
+
                 command.CommandText = query;
                 reader = command.ExecuteReader();
                 dtRentals.Rows.Clear();

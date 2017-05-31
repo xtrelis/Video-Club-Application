@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.Odbc;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Video_Club_Application
@@ -30,12 +25,13 @@ namespace Video_Club_Application
         private void LoadStores()
         {
             Category category;
-            string query = "SELECT store.`store_id`,address.`address`" + Environment.NewLine +
-                        "FROM store" + Environment.NewLine +
-                        "LEFT JOIN address ON store.`address_id`= address.`address_id`;";
 
             try
             {
+                string query = "SELECT store.`store_id`,address.`address`" + Environment.NewLine +
+                            "FROM store" + Environment.NewLine +
+                            "LEFT JOIN address ON store.`address_id`= address.`address_id`;";
+
                 command.CommandText = query;
                 reader = command.ExecuteReader();
                 listStores.Clear();
@@ -47,7 +43,7 @@ namespace Video_Club_Application
                 }
 
                 cbxStores.SelectedIndexChanged -= new EventHandler(cbxStores_SelectedIndexChanged);
-                Bind(cbxStores);
+                Methods.Bind(cbxStores, listStores);
                 cbxStores.SelectedIndex = -1;
                 cbxStores.Text = "Stores";
                 cbxStores.SelectedIndexChanged += new EventHandler(cbxStores_SelectedIndexChanged);
@@ -55,16 +51,6 @@ namespace Video_Club_Application
                 if (reader != null) reader.Close();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
-        }
-
-        private void Bind(ComboBox cbx)
-        {
-            cbx.BeginUpdate();
-            cbx.DataSource = null;
-            cbx.DataSource = listStores;
-            cbx.ValueMember = "id";
-            cbx.DisplayMember = "name";
-            cbx.EndUpdate();
         }
 
         private void ShowPayments()
@@ -87,7 +73,7 @@ namespace Video_Club_Application
                 if (cbxStores.SelectedIndex != -1)
                 {
                     Category category = (Category)cbxStores.SelectedItem;
-                    storeId = Convert.ToInt32(category.id);
+                    storeId = Convert.ToInt32(category.Id);
                     where += "  AND store.`store_id`=" + storeId;
                 }
 

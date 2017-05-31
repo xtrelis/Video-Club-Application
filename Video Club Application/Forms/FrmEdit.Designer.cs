@@ -33,7 +33,6 @@
             this.txtMovieName = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEdit)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,15 +41,17 @@
             this.dgvEdit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEdit.Location = new System.Drawing.Point(12, 39);
             this.dgvEdit.Name = "dgvEdit";
-            this.dgvEdit.Size = new System.Drawing.Size(1360, 510);
+            this.dgvEdit.ReadOnly = true;
+            this.dgvEdit.Size = new System.Drawing.Size(1260, 510);
             this.dgvEdit.TabIndex = 0;
+            this.dgvEdit.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvEdit_CellMouseDoubleClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(921, 12);
+            this.label1.Location = new System.Drawing.Point(820, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 16);
             this.label1.TabIndex = 8;
@@ -59,7 +60,7 @@
             // txtMovieName
             // 
             this.txtMovieName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.txtMovieName.Location = new System.Drawing.Point(1044, 9);
+            this.txtMovieName.Location = new System.Drawing.Point(943, 9);
             this.txtMovieName.Name = "txtMovieName";
             this.txtMovieName.Size = new System.Drawing.Size(200, 22);
             this.txtMovieName.TabIndex = 9;
@@ -67,7 +68,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.btnSearch.Location = new System.Drawing.Point(1272, 8);
+            this.btnSearch.Location = new System.Drawing.Point(1172, 8);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 25);
             this.btnSearch.TabIndex = 10;
@@ -86,24 +87,12 @@
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.btnSave.Location = new System.Drawing.Point(142, 8);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 25);
-            this.btnSave.TabIndex = 12;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // FrmEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(1384, 561);
-            this.Controls.Add(this.btnSave);
+            this.ClientSize = new System.Drawing.Size(1284, 561);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtMovieName);
@@ -127,6 +116,5 @@
         private System.Windows.Forms.TextBox txtMovieName;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnLoad;
-        private System.Windows.Forms.Button btnSave;
     }
 }

@@ -45,11 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\FrmActorsInfo.cs">
+    <Compile Include="Forms\FrmMovieEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmActorsInfo.Designer.cs">
-      <DependentUpon>FrmActorsInfo.cs</DependentUpon>
+    <Compile Include="Forms\FrmMovieEdit.Designer.cs">
+      <DependentUpon>FrmMovieEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMovieInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMovieInfo.Designer.cs">
+      <DependentUpon>FrmMovieInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmCustomers.cs">
       <SubType>Form</SubType>
@@ -108,10 +114,20 @@
       <DependentUpon>FrmSales.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Methods.cs" />
+    <Compile Include="Forms\FrmMovieRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMovieRegistration.Designer.cs">
+      <DependentUpon>FrmMovieRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\FrmActorsInfo.resx">
-      <DependentUpon>FrmActorsInfo.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmMovieEdit.resx">
+      <DependentUpon>FrmMovieEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMovieInfo.resx">
+      <DependentUpon>FrmMovieInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmCustomers.resx">
       <DependentUpon>FrmCustomers.cs</DependentUpon>
@@ -139,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmSales.resx">
       <DependentUpon>FrmSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMovieRegistration.resx">
+      <DependentUpon>FrmMovieRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
