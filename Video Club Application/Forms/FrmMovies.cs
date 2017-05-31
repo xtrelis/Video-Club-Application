@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.Odbc;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Video_Club_Application
@@ -27,13 +22,13 @@ namespace Video_Club_Application
         }
 
         // METHODS
-        private void LoadMovies()
+        private void LoadCategories()
         {
             Category category;
-            string query = "SELECT category.`category_id`, category.`name` FROM category";
 
             try
             {
+                string query = "SELECT category.`category_id`, category.`name` FROM category";
                 command.CommandText = query;
                 reader = command.ExecuteReader();
                 listMovies.Clear();
@@ -45,7 +40,7 @@ namespace Video_Club_Application
                 }
 
                 cbxCategories.SelectedIndexChanged -= new EventHandler(cbxCategories_SelectedIndexChanged);
-                Bind(cbxCategories);
+                Methods.Bind(cbxCategories, listMovies);
                 cbxCategories.SelectedIndex = -1;
                 cbxCategories.Text = "Categories";
                 cbxCategories.SelectedIndexChanged += new EventHandler(cbxCategories_SelectedIndexChanged);
@@ -55,17 +50,7 @@ namespace Video_Club_Application
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
-        private void Bind(ComboBox cbx)
-        {
-            cbx.BeginUpdate();
-            cbx.DataSource = null;
-            cbx.DataSource = listMovies;
-            cbx.ValueMember = "id";
-            cbx.DisplayMember = "name";
-            cbx.EndUpdate();
-        }
-
-        private void ShowMovies()
+        private void LoadMovies()
         {
             int categoryId;
             string query, where = string.Empty;
@@ -73,16 +58,19 @@ namespace Video_Club_Application
             try
             {
                 query = "SELECT" + Environment.NewLine +
-                    "`film`.`film_id`     AS `FID`," + Environment.NewLine +
-                    "`film`.`title`       AS `title`," + Environment.NewLine +
-                    "`category`.`name`    AS `category`," + Environment.NewLine +
-                    "`film`.`length`      AS `length`," + Environment.NewLine +
-                    "`film`.`rating`      AS `rating`," + Environment.NewLine +
-                    "`film`.`rental_rate` AS `price`," + Environment.NewLine +
-                    "film.`special_features` AS special_features," + Environment.NewLine +
-                    "film.`rental_duration` AS rental_duration," + Environment.NewLine +
-                    "film.`replacement_cost` AS replacement_cost," + Environment.NewLine +
-                    "`film`.`description` AS `description`" + Environment.NewLine +
+                    "`film`.`film_id` AS `Id`," + Environment.NewLine +
+                    "`film`.`title` AS `Title`," + Environment.NewLine +
+                    "`category`.`name`    AS `Category`," + Environment.NewLine +
+                    "`film`.`release_year` AS `Release Year`," + Environment.NewLine +
+                    "`film`.`length` AS `Length`," + Environment.NewLine +
+                    "`film`.`language_id` AS `Language Id`," + Environment.NewLine +
+                    "`film`.`rating` AS `Rating`," + Environment.NewLine +
+                    "`film`.`rental_rate` AS `Price`," + Environment.NewLine +
+                    "film.`special_features` AS `Special Features`," + Environment.NewLine +
+                    "film.`rental_duration` AS `Rental Duration`," + Environment.NewLine +
+                    "film.`replacement_cost` AS `Replacement Cost`," + Environment.NewLine +
+                    "`film`.`description` AS `Description`," + Environment.NewLine +
+                    "`film`.`image` AS `Image`" + Environment.NewLine +
                     "FROM category" + Environment.NewLine +
                     "LEFT JOIN film_category ON category.`category_id`= film_category.`category_id`" + Environment.NewLine +
                     "LEFT JOIN film ON film_category.`film_id`= film.`film_id`" + Environment.NewLine;
@@ -92,7 +80,7 @@ namespace Video_Club_Application
                 if (cbxCategories.SelectedIndex != -1)
                 {
                     Category category = (Category)cbxCategories.SelectedItem;
-                    categoryId = Convert.ToInt32(category.id);
+                    categoryId = Convert.ToInt32(category.Id);
                     where += " AND category.`category_id`=" + categoryId;
                 }
 
@@ -113,18 +101,18 @@ namespace Video_Club_Application
         // EVENTS
         private void cbxCategories_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ShowMovies();
+            LoadMovies();
         }
 
         private void FrmMovies_Load(object sender, EventArgs e)
         {
+            LoadCategories();
             LoadMovies();
-            ShowMovies();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            ShowMovies();
+            LoadMovies();
         }
 
         private void txtMovieName_TextChanged(object sender, EventArgs e)
@@ -138,7 +126,7 @@ namespace Video_Club_Application
             if (e.RowIndex != -1)
             {
                 string movieTitle = dgvMovies.Rows[e.RowIndex].Cells[1].Value.ToString();
-                FrmActorsInfo ActorsInfoform = new FrmActorsInfo(movieTitle);
+                FrmMovieInfo ActorsInfoform = new FrmMovieInfo(movieTitle);
                 ActorsInfoform.Show();
             }
         }

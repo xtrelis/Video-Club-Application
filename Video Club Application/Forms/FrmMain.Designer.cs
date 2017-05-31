@@ -35,6 +35,7 @@
             this.btnPayments = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.btnMovieRegistration = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnection
@@ -114,12 +115,24 @@
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
+            // btnMovieRegistration
+            // 
+            this.btnMovieRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btnMovieRegistration.Location = new System.Drawing.Point(12, 357);
+            this.btnMovieRegistration.Name = "btnMovieRegistration";
+            this.btnMovieRegistration.Size = new System.Drawing.Size(120, 40);
+            this.btnMovieRegistration.TabIndex = 8;
+            this.btnMovieRegistration.Text = "Movie Registration";
+            this.btnMovieRegistration.UseVisualStyleBackColor = true;
+            this.btnMovieRegistration.Click += new System.EventHandler(this.btnMovieRegistration_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(334, 361);
+            this.ClientSize = new System.Drawing.Size(334, 461);
+            this.Controls.Add(this.btnMovieRegistration);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnSales);
             this.Controls.Add(this.btnPayments);
@@ -143,6 +156,7 @@
         private System.Windows.Forms.Button btnPayments;
         private System.Windows.Forms.Button btnSales;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnMovieRegistration;
     }
 }
 

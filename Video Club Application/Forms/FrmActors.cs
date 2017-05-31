@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.Odbc;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Video_Club_Application
@@ -27,10 +21,10 @@ namespace Video_Club_Application
         // METHODS
         private void LoadActors()
         {
-            string query = "SELECT * FROM actor_info", where;
-
             try
             {
+                string query = "SELECT * FROM actor_info", where;
+
                 if (txtActorName.Text != string.Empty)
                 {
                     where = "Where last_name LIKE " + Methods.Quote(txtActorName.Text + "%");

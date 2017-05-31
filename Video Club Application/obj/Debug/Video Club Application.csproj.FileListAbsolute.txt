@@ -28,3 +28,24 @@ C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίε�
 C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Εργασία Προόδου\Video Club Application\obj\Debug\Video_Club_Application.FrmSales.resources
 C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Εργασία Προόδου\Video Club Application\obj\Debug\Video_Club_Application.FrmActorsInfo.resources
 C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Εργασία Προόδου\Video Club Application\obj\Debug\Video_Club_Application.FrmRentals.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Εργασία Προόδου\Video Club Application\obj\Debug\Video_Club_Application.FrmMovieRegistration.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\bin\Debug\Video Club Application.exe.config
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\bin\Debug\Video Club Application.exe
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\bin\Debug\Video Club Application.pdb
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video Club Application.csprojResolveAssemblyReference.cache
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmCustomers.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmActors.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmConnection.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmMain.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmEdit.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmMovies.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmPayments.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmRentals.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmSales.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmMovieRegistration.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.Properties.Resources.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video Club Application.csproj.GenerateResource.Cache
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video Club Application.exe
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video Club Application.pdb
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmMovieEdit.resources
+C:\Users\Maria\Desktop\Xaris\ΣΧΟΛΗ\4ο Εξάμηνο\RDBMS\Εργασίες\Video Club Application\Video Club Application\obj\Debug\Video_Club_Application.FrmMovieInfo.resources

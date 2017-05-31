@@ -41,7 +41,7 @@
             // 
             this.cbxCategories.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.cbxCategories.FormattingEnabled = true;
-            this.cbxCategories.Location = new System.Drawing.Point(825, 12);
+            this.cbxCategories.Location = new System.Drawing.Point(1110, 12);
             this.cbxCategories.Name = "cbxCategories";
             this.cbxCategories.Size = new System.Drawing.Size(121, 24);
             this.cbxCategories.TabIndex = 2;
@@ -50,7 +50,7 @@
             // txtMovieName
             // 
             this.txtMovieName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.txtMovieName.Location = new System.Drawing.Point(599, 12);
+            this.txtMovieName.Location = new System.Drawing.Point(864, 14);
             this.txtMovieName.Name = "txtMovieName";
             this.txtMovieName.Size = new System.Drawing.Size(200, 22);
             this.txtMovieName.TabIndex = 3;
@@ -70,7 +70,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.btnSearch.Location = new System.Drawing.Point(972, 11);
+            this.btnSearch.Location = new System.Drawing.Point(1272, 11);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 25);
             this.btnSearch.TabIndex = 5;
@@ -86,7 +86,7 @@
             this.dgvMovies.Location = new System.Drawing.Point(12, 42);
             this.dgvMovies.Name = "dgvMovies";
             this.dgvMovies.ReadOnly = true;
-            this.dgvMovies.Size = new System.Drawing.Size(1060, 507);
+            this.dgvMovies.Size = new System.Drawing.Size(1360, 507);
             this.dgvMovies.TabIndex = 6;
             this.dgvMovies.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMovies_CellDoubleClick);
             // 
@@ -95,7 +95,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(476, 15);
+            this.label1.Location = new System.Drawing.Point(741, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 16);
             this.label1.TabIndex = 7;
@@ -106,7 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(1084, 561);
+            this.ClientSize = new System.Drawing.Size(1384, 561);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvMovies);
             this.Controls.Add(this.btnSearch);
